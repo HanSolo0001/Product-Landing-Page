@@ -4,8 +4,57 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(20, 19, 19);
+    font-size: 1.125rem;
+    text-align: center;
+    color: rgb(103, 98, 117)
+}
+
 .container {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 2rem;
+}
+
+.shipping,
+.quality,
+.satisfaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shipping__flex,
+.quality__flex,
+.satisfaction__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.shipping__title,
+.quality__title,
+.satisfaction__title {
+    margin-bottom: 0;
+    padding-left: .25em;
+}
+
+.shipping__image,
+.quality__image {
+    height: 2.65em;
 }
