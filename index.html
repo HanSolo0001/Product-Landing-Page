@@ -18,44 +18,73 @@
             </div>
             <nav id="nav-bar">
                 <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="#">Temp Link 1</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Temp Link 2</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Temp Link 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#demonstration">How Builds Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="main container">
-        <div class="shipping">
-            <img class="shipping__image" src="https://img.icons8.com/color/48/000000/free-shipping.png" />
-            <div class="shipping__flex">
-                <h2 class="shipping__title">Shipping</h2>
-                <p class="shipping__text">Free shipping on all custom rig orders!</p>
-            </div>
-        </div>
-        <div class="quality">
-            <img class="quality__image" src="https://img.icons8.com/fluency/48/000000/processor.png" />
-            <div class="quality__flex">
-                <h2 class="quality__title">Quality</h2>
-                <p class="quality__text">We pride ourselves on the best quality parts, and ensure you that your custom rig is ready to dominate the competition. </p>
-            </div>
-        </div>
-        <div class="satisfaction">
-            <img class="satisfaction__image" src="img/customer-satisfaction.png">
-            <div class="satisfaction__flex">
-                <h2 class="satisfaction__title">Customer Satisfaction</h2>
-                <p class="satisfaction__text">Customer satisfaction is our top priority. If you're not satisfied with your custom rig, we'll give you a full refund. All custom rigs come with a 3 year warranty!</p>
-            </div>
-        </div>
-    </main>
-    <section class="demonstration container">
-        <iframe id="video" width="250" height="300" src="https://www.youtube.com/embed/J4pa0ZenNqg?controls=1" allowfullscreen="true"></iframe>
+    <section class="contact">
+        <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+            <h2 class="form__title">Custom Built Right The First Time</h2>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required><br>
+            <input type="submit" id="submit" name="submit" value="Get your quote now">
+        </form>
     </section>
-
-    <footer>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        </p>
-    </footer>
+    <div class="page-flex">
+        <div class="cols">
+            <main class="main container">
+                <div id="features"></div>
+                <div class="shipping">
+                    <img class="shipping__image" src="https://img.icons8.com/color/48/000000/free-shipping.png" />
+                    <div class="shipping__flex container">
+                        <h2 class="shipping__title">Shipping</h2>
+                        <p class="shipping__text">Free shipping on all custom rig orders!</p>
+                    </div>
+                </div>
+                <div class="quality">
+                    <img class="quality__image" src="https://img.icons8.com/fluency/48/000000/processor.png" />
+                    <div class="quality__flex container">
+                        <h2 class="quality__title">Quality</h2>
+                        <p class="quality__text">We pride ourselves on the best quality parts, and ensure you that your custom rig is ready to dominate the competition. </p>
+                    </div>
+                </div>
+                <div class="satisfaction">
+                    <img class="satisfaction__image" src="img/customer-satisfaction.png">
+                    <div class="satisfaction__flex container">
+                        <h2 class="satisfaction__title">Customer Satisfaction</h2>
+                        <p class="satisfaction__text">Customer satisfaction is our top priority. If you're not satisfied with your custom rig, we'll give you a full refund. All custom rigs come with a 3 year warranty!</p>
+                    </div>
+                </div>
+            </main>
+            <div id="demonstration"></div>
+            <section class="demonstration container">
+                <iframe id="video" width="250" height="300" src="https://www.youtube.com/embed/J4pa0ZenNqg?controls=1" frameborder="0" allowfullscreen></iframe>
+            </section>
+            <div id="pricing"></div>
+            <div class="pricing-flex">
+                <section class="pricing container">
+                    <h3 class="pricing__title">Base Build Price</h3>
+                    <p class="pricing__text">Base build price starts out at a minimum of $2,000. Nothing too fancy here.</p>
+                </section>
+                <section class="pricing container">
+                    <h3 class="pricing__title">Casual Build Price</h3>
+                    <p class="pricing__text">Casual build price starts out at a minimum of $5,000. This includes extra accessories.</p>
+                </section>
+                <section class="pricing container">
+                    <h3 class="pricing__title">Insane Build Price</h3>
+                    <p class="pricing__text">Insane build price starts out at a minimum of $10,000. This includes everything needed to annihilate your foes. It even includes a gaming chair, a headset stand, and a UPS!</p>
+                </section>
+            </div>
+        </div>
+        <div class="cols">
+            <footer class="footer">
+                <div>Icons made by <a class="footer__link" href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a class="footer__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <p class="footer__text">&copy 2021 <a class="footer__link" href="javascript:;">Daniel Hildreth</a></p>
+            </footer>
+        </div>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
